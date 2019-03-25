@@ -1,0 +1,112 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".MainActivity">
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+        <ImageView
+            android:id="@+id/logo"
+            android:layout_width="wrap_content"
+            android:layout_height="90dp"
+            android:adjustViewBounds="true"
+            android:scaleType="center"
+            android:layout_marginStart="150dp"
+            app:srcCompat="@mipmap/ic_launcher"
+
+            />
+        <RelativeLayout
+            android:layout_width="wrap_content"
+            android:layout_height="match_parent"
+            android:layout_below="@+id/logo"
+            android:background="@drawable/circle"
+            android:layout_marginTop="0dp"
+            android:layout_marginRight="20dp"
+            android:layout_marginLeft="20dp"
+            android:layout_marginBottom="30dp"
+            >
+
+            <TextView
+                android:id="@+id/logoname"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="70dp"
+
+                android:layout_marginTop="10dp"
+                android:text="ULLALA"
+                android:textAllCaps="true"
+                android:textSize="34dp"
+
+                android:textStyle="bold"
+                android:typeface="serif" />
+
+
+
+
+            <LinearLayout
+                android:layout_below="@+id/logoname"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:orientation="vertical">
+
+                <TextView android:id="@+id/nphonenumber"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="25dp"
+                    android:layout_below="@+id/logoname"
+                    android:fontFamily="sans-serif-condensed"
+                    android:text="Phone number"
+
+                    android:textSize="24dp"
+                    android:layout_marginLeft="10dp"
+                    />
+
+                <EditText
+                    android:id="@+id/number"
+                    android:layout_marginStart="10dp"
+                    android:layout_marginEnd="10dp"
+                    android:layout_width="match_parent"
+                    android:layout_height="40dp"
+
+                    android:textSize="20dp"
+                    android:paddingRight="50dp"
+                    android:paddingLeft="50dp"/>
+
+                <Button
+                    android:id="@+id/Login"
+                    android:layout_width="250dp"
+                    android:layout_height="40dp"
+                    android:layout_marginTop="25dp"
+                    android:layout_marginStart="50dp"
+                    android:layout_marginEnd="10dp"
+                    android:layout_below="@+id/number"
+                    android:text="LOGIN"
+
+                    android:textSize="30dp"
+
+                    />
+
+                <Button
+                    style="@style/Widget.AppCompat.Button.Borderless.Colored"
+                    android:id="@+id/signup"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+
+                    android:layout_marginLeft="250dp"
+                    android:layout_marginTop="140dp"
+
+                    android:text="signup"
+
+                    android:textSize="15dp" />
+            </LinearLayout>
+
+        </RelativeLayout>
+
+    </RelativeLayout>
+
+</RelativeLayout>
